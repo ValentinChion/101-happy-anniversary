@@ -57,7 +57,7 @@ export default function RaffleAnnouncement() {
           <div className="flex justify-center items-center gap-2 text-primary">
             <CalendarDays className="h-6 w-6" />
             <span className="text-lg font-semibold">
-              {ANNOUNCEMENT_DATE.toLocaleDateString(undefined, {
+              {ANNOUNCEMENT_DATE.toLocaleDateString('fr-FR', {
                 weekday: 'long',
                 month: 'long',
                 day: 'numeric',
@@ -67,7 +67,7 @@ export default function RaffleAnnouncement() {
           <div className="flex justify-center items-center gap-2 text-primary">
             <Clock className="h-6 w-6" />
             <span className="text-lg font-semibold">
-              {ANNOUNCEMENT_DATE.toLocaleTimeString(undefined, {
+              {ANNOUNCEMENT_DATE.toLocaleTimeString('fr-FR', {
                 hour: '2-digit',
                 minute: '2-digit',
               })}
