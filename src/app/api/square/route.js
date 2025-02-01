@@ -24,7 +24,7 @@ export async function GET(request) {
       filter: {
         date_time_filter: {
           created_at: {
-            start_at: '2025-02-01T14:00:00Z',
+            start_at: '2025-02-01T17:55:00.000Z',
           },
         },
         state_filter: {
@@ -37,8 +37,6 @@ export async function GET(request) {
 
   const response = await fetch(url, fetchOptions);
   const jsonRes = await response.json();
-
-  console.log(jsonRes);
 
   return NextResponse.json(jsonRes, { status: response.status });
 }
