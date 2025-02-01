@@ -74,7 +74,7 @@ export default function RockPaperScissorsTournament() {
               transition={{ delay: 0.2, type: 'spring', stiffness: 100 }}
             >
               <CardTitle className="text-3xl sm:text-4xl font-extrabold text-center text-primary">
-                Rock Paper Scissors Tournament
+                Tournoi de Pierre-Feuille-Ciseaux
               </CardTitle>
             </motion.div>
           </CardHeader>
@@ -85,7 +85,7 @@ export default function RockPaperScissorsTournament() {
               transition={{ delay: 0.4, duration: 0.5 }}
               className="text-center text-2xl font-bold text-primary"
             >
-              Join us for an epic battle of wits and luck!
+              Rejoins ce tournoi épique !
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
@@ -95,11 +95,11 @@ export default function RockPaperScissorsTournament() {
             >
               <div className="flex items-center gap-2">
                 <Calendar className="h-5 w-5" />
-                <span>Tonight</span>
+                <span>Ce soir</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-5 w-5" />
-                <span>8:30 PM</span>
+                <span>On verra</span>
               </div>
             </motion.div>
             <motion.div
@@ -108,8 +108,8 @@ export default function RockPaperScissorsTournament() {
               transition={{ delay: 0.8, duration: 0.5 }}
               className="text-center text-muted-foreground"
             >
-              Prove your mastery of rock, paper, and scissors in this thrilling
-              tournament. Will you emerge as the ultimate champion?
+              Prouvez votre maîtrise de la chance et votre intellect, qui sera
+              le champion ?
             </motion.div>
           </CardContent>
         </Card>
