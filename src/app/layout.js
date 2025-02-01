@@ -1,8 +1,14 @@
 import './globals.css';
-import { geist } from './fonts';
+import localFont from 'next/font/local';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 export const queryClient = new QueryClient();
+
+export const geistSans = localFont({
+  src: './Geist-VariableFont_wght.ttf',
+  variable: '--font-geist-sans',
+  weight: '100 900',
+});
 
 export const metadata = {
   title: 'Counter Levels',
@@ -12,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={geist.className}>{children}</body>
+      <body className={geistSans.className}>{children}</body>
     </html>
   );
 }
