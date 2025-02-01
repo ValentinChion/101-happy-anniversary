@@ -35,7 +35,7 @@ export async function GET(request) {
     location_ids: ['L6RH2QJRF6HCD'],
   });
 
-  const response = await fetch(url, fetchOptions);
+  const response = await fetch(url, { ...fetchOptions, cache: 'no-store' });
   const jsonRes = await response.json();
 
   return NextResponse.json(jsonRes, { status: response.status });
