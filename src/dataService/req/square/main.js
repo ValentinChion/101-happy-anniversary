@@ -25,4 +25,5 @@ export const usePayments = (locationId) =>
 
       return Math.ceil(ordersNbr);
     },
+    refetchInterval: 30000,
   });
