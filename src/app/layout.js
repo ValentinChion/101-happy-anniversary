@@ -11,8 +11,8 @@ export const geistSans = localFont({
 });
 
 export const metadata = {
-  title: 'Counter Levels',
-  description: 'A fun counter game with levels',
+  title: 'Anniversaire du 101',
+  description: "OMG l'anniv du 101",
 };
 
 export default function RootLayout({ children }) {
