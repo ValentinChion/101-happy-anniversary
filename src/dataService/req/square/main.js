@@ -23,9 +23,7 @@ export const usePayments = (locationId) =>
           return acc;
         }, 0) || 0;
 
-      console.log(ordersNbr);
-
       return Math.ceil(ordersNbr);
     },
-    refetchInterval: 30000,
+    refetchInterval: 10000,
   });
