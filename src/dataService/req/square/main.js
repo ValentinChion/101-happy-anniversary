@@ -10,7 +10,7 @@ export const usePayments = (locationId) =>
 
       const ordersNbr =
         jsonRes?.orders?.reduce((acc, order) => {
-          order.line_items.map((item) => {
+          order?.line_items?.map((item) => {
             const money = item.total_money.amount;
 
             if (money >= 600) {
@@ -22,6 +22,8 @@ export const usePayments = (locationId) =>
 
           return acc;
         }, 0) || 0;
+
+      console.log(ordersNbr);
 
       return Math.ceil(ordersNbr);
     },

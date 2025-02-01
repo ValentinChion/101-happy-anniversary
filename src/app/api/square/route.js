@@ -24,7 +24,7 @@ export async function GET(request) {
       filter: {
         date_time_filter: {
           created_at: {
-            start_at: '2025-02-01T17:55:00.000Z',
+            start_at: '2025-02-01T18:00:00.000Z',
           },
         },
         state_filter: {
